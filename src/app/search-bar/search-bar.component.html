@@ -1,1 +1,4 @@
-<p>search-bar works!</p>
+<form (submit)="onFormSubmit($event)">
+    <!-- (input) = input event listener for each key press -->
+    <input #searchTerm (input)="term = searchTerm.value"/>
+</form>
