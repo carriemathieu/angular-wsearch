@@ -1,4 +1,11 @@
-<form (submit)="onFormSubmit($event)">
-    <!-- (input) = input event listener for each key press -->
-    <input #searchTerm (input)="term = searchTerm.value"/>
-</form>
+<div class="box">
+    <form (submit)="onFormSubmit($event)">
+        <!-- (input) = input event listener for each key press -->
+        <input 
+            class="input" 
+            placeholder="enter search term"
+            #searchTerm 
+            (input)="term = searchTerm.value"
+        />
+    </form>
+</div>
